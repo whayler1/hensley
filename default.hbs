@@ -16,20 +16,21 @@
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "components/normalize-css/normalize.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/hens.css"}}" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
-<body class="{{body_class}} nav-closed">
+<body class="{{body_class}} hens-body">
 
     {{navigation}}
 
-    <div class="site-wrapper">
+    <main class="hens-main">
 
         {{! Everything else gets inserted here }}
         <!-- {{{body}}} -->
 
-    </div>
+    </main>
 
 </body>
 </html>
