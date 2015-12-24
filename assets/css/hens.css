@@ -1,4 +1,42 @@
+/**
+ * Vars
+ */
 .hens-header {
+  margin: 0;
   padding: 30px;
-  margin: 10px;
+}
+.hens-header h1 {
+  margin: 0 0 15px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.hens-header h1 a {
+  color: black;
+  text-decoration: none;
+}
+.hens-header h1 a:hover,
+.hens-header h1 a:focus {
+  text-decoration: underline;
+}
+.hens-header h1 a:active {
+  color: #363636;
+}
+.hens-header-list {
+  margin: 15px 0 0;
+  padding: 0;
+}
+.hens-header-list li {
+  list-style: none;
+  margin-top: 7px;
+}
+.hens-header-list a {
+  color: #808080;
+  text-decoration: none;
+}
+.hens-header-list a:hover,
+.hens-header-list a:focus {
+  color: #363636;
+}
+.hens-header-list a:active {
+  color: black;
 }
