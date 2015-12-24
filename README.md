@@ -1,6 +1,6 @@
 # Hensley
 
-Michael Henselys photography portfolio.
+Ghost theme for Michael Henselys photography portfolio.
 
 ## Copyright & License
 
