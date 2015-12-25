@@ -41,6 +41,19 @@ body {
   @media(min-width: 1190px) {
     padding-left: @gutter;
   }
+
+  h1 {
+    margin: 0 0 @gutter;
+    font-size: @font-lg;
+  }
+
+  p {
+    color: @gray;
+    margin: 0;
+    +p {
+      margin-top: @half-gutter;
+    }
+  }
 }
 
 .hens-footer {
