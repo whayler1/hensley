@@ -1,0 +1,9 @@
+<nav class="hens-pagination" role="navigation">
+    {{#if prev}}
+        <a class="hens-pagination-prev" href="{{page_url prev}}"><i class="icon-chevron-left"></i> Previous Photos</a>
+    {{/if}}
+    &nbsp;
+    {{#if next}}
+        <a href="{{page_url next}}">More Photos <i class="icon-chevron-right"></i></a>
+    {{/if}}
+</nav>

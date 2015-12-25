@@ -22,7 +22,8 @@
 
 // break points
 
-@break-md: 787px;
+@break-md: 767px;
+@break-lg: 1000px;
 
 body {
   font-family: 'Raleway';
@@ -31,10 +32,53 @@ body {
 .hens-main {
 
   @media(min-width: @break-md) {
-    margin-left: 150px + (@gutter * 2);
-    padding: @gutter;
+    padding: @gutter @gutter @gutter (150px + (@gutter * 3));
+  }
+  @media(min-width: @break-lg) {
+    width: 730px;
+    margin: 0 auto;
+  }
+  @media(min-width: 1190px) {
+    padding-left: @gutter;
+  }
+}
+
+.hens-footer {
+  padding: @gutter * 2 0 0;
+  font-size: @font-sm;
+}
+
+.hens-pagination {
+  margin-top: @gutter;
+  text-align: right;
+
+  a {
+    color: @gray;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: @tundora;
+    }
+    &:active {
+      color: @mine-shaft;
+    }
+  }
+}
+
+.hens-pagination-prev {
+  float: left;
+}
+
+.hens-post {
+  img {
+    width: 100%;
+    height: auto;
   }
 
+  +.hens-post {
+    margin-top: @gutter * 2;
+  }
 }
 
 .hens-header {
@@ -47,6 +91,12 @@ body {
     top: 0;
     left: 0;
   }
+  // @media(min-width: @break-lg) {
+  //   padding-right: @gutter * 4 + 730px;
+  //   margin: 0 auto;
+  //   left: 50%;
+  //   margin-left: -(@break-lg / 2);
+  // }
 
   h1 {
     margin: 0 0 @half-gutter;

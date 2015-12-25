@@ -4,17 +4,56 @@
 body {
   font-family: 'Raleway';
 }
-@media (min-width: 787px) {
+@media (min-width: 767px) {
   .hens-main {
-    margin-left: 210px;
-    padding: 30px;
+    padding: 30px 30px 30px 240px;
   }
+}
+@media (min-width: 1000px) {
+  .hens-main {
+    width: 730px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1190px) {
+  .hens-main {
+    padding-left: 30px;
+  }
+}
+.hens-footer {
+  padding: 60px 0 0;
+  font-size: 0.85rem;
+}
+.hens-pagination {
+  margin-top: 30px;
+  text-align: right;
+}
+.hens-pagination a {
+  color: #808080;
+  text-decoration: none;
+}
+.hens-pagination a:hover,
+.hens-pagination a:focus {
+  color: #474747;
+}
+.hens-pagination a:active {
+  color: #363636;
+}
+.hens-pagination-prev {
+  float: left;
+}
+.hens-post img {
+  width: 100%;
+  height: auto;
+}
+.hens-post + .hens-post {
+  margin-top: 60px;
 }
 .hens-header {
   margin: 0;
   padding: 30px;
 }
-@media (min-width: 787px) {
+@media (min-width: 767px) {
   .hens-header {
     width: 150px;
     position: fixed;
