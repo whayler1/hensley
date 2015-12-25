@@ -20,10 +20,33 @@
 @tundora: #474747;
 @gray: #808080;
 
+// break points
+
+@break-md: 787px;
+
+body {
+  font-family: 'Raleway';
+}
+
+.hens-main {
+
+  @media(min-width: @break-md) {
+    margin-left: 150px + (@gutter * 2);
+    padding: @gutter;
+  }
+
+}
 
 .hens-header {
   margin: 0;
   padding: @gutter;
+
+  @media(min-width:@break-md) {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 
   h1 {
     margin: 0 0 @half-gutter;

@@ -1,9 +1,26 @@
 /**
  * Vars
  */
+body {
+  font-family: 'Raleway';
+}
+@media (min-width: 787px) {
+  .hens-main {
+    margin-left: 210px;
+    padding: 30px;
+  }
+}
 .hens-header {
   margin: 0;
   padding: 30px;
+}
+@media (min-width: 787px) {
+  .hens-header {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
 .hens-header h1 {
   margin: 0 0 15px;

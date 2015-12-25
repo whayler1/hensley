@@ -17,6 +17,8 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "components/normalize-css/normalize.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/hens.css"}}" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/66368/Hensley/style.css?3gdq8i">
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -25,10 +27,10 @@
 
     {{navigation}}
 
-    <main class="hens-main">
+    <main class="hens-main" role="main">
 
         {{! Everything else gets inserted here }}
-        <!-- {{{body}}} -->
+        {{{body}}}
 
     </main>
 
