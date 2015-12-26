@@ -4,6 +4,9 @@
 body {
   font-family: 'Raleway';
 }
+.hens-titlecase {
+  text-transform: capitalize;
+}
 @media (min-width: 767px) {
   .hens-main {
     padding: 30px 30px 30px 240px;
@@ -23,6 +26,8 @@ body {
 .hens-main h1 {
   margin: 0 0 30px;
   font-size: 1.2rem;
+  font-weight: 400;
+  color: #474747;
 }
 .hens-main p {
   color: #808080;
@@ -73,7 +78,7 @@ body {
   }
 }
 .hens-header h1 {
-  margin: 0 0 15px;
+  margin: 0 0 30px;
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -105,5 +110,21 @@ body {
   color: #363636;
 }
 .hens-header-list a:active {
+  color: black;
+}
+.hens-post-meta {
+  margin-top: 30px;
+  color: #808080;
+}
+.hens-post-meta a {
+  color: #808080;
+  text-decoration: none;
+}
+.hens-post-meta a:hover,
+.hens-post-meta a:active {
+  color: #363636;
+  text-decoration: underline;
+}
+.hens-post-meta a:active {
   color: black;
 }

@@ -29,6 +29,10 @@ body {
   font-family: 'Raleway';
 }
 
+.hens-titlecase {
+  text-transform: capitalize;
+}
+
 .hens-main {
 
   @media(min-width: @break-md) {
@@ -45,6 +49,8 @@ body {
   h1 {
     margin: 0 0 @gutter;
     font-size: @font-lg;
+    font-weight: 400;
+    color: @tundora;
   }
 
   p {
@@ -104,15 +110,9 @@ body {
     top: 0;
     left: 0;
   }
-  // @media(min-width: @break-lg) {
-  //   padding-right: @gutter * 4 + 730px;
-  //   margin: 0 auto;
-  //   left: 50%;
-  //   margin-left: -(@break-lg / 2);
-  // }
 
   h1 {
-    margin: 0 0 @half-gutter;
+    margin: 0 0 @gutter;
     font-size: @font-lg;
     font-weight: 400;
     a {
@@ -146,6 +146,25 @@ body {
     &:hover,
     &:focus {
       color: @mine-shaft;
+    }
+    &:active {
+      color: black;
+    }
+  }
+}
+
+.hens-post-meta {
+  margin-top: @gutter;
+  color: @gray;
+
+  a {
+    color: @gray;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      color: @mine-shaft;
+      text-decoration: underline;
     }
     &:active {
       color: black;
