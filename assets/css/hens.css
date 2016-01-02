@@ -25,23 +25,41 @@ body {
 }
 .hens-main h1 {
   margin: 0 0 30px;
-  font-size: 1.2rem;
+  padding: 0 15px;
+  font-size: 1rem;
   font-weight: 400;
   color: #474747;
 }
+@media (min-width: 767px) {
+  .hens-main h1 {
+    padding: 0;
+    font-size: 1.2rem;
+  }
+}
 .hens-main p {
   color: #808080;
-  margin: 0;
+  margin: 0 15px;
 }
 .hens-main p + p {
   margin-top: 15px;
 }
+@media (min-width: 767px) {
+  .hens-main p {
+    margin: 0;
+  }
+}
 .hens-footer {
-  padding: 60px 0 0;
+  padding: 30px 15px 30px;
   font-size: 0.85rem;
+}
+@media (min-width: 767px) {
+  .hens-footer {
+    padding: 60px 0 0;
+  }
 }
 .hens-pagination {
   margin-top: 30px;
+  padding: 0 15px;
   text-align: right;
 }
 .hens-pagination a {
@@ -55,6 +73,11 @@ body {
 .hens-pagination a:active {
   color: #363636;
 }
+@media (min-width: 767px) {
+  .hens-pagination {
+    padding: 0;
+  }
+}
 .hens-pagination-prev {
   float: left;
 }
@@ -63,14 +86,20 @@ body {
   height: auto;
 }
 .hens-post + .hens-post {
-  margin-top: 60px;
+  margin-top: 30px;
+}
+@media (min-width: 767px) {
+  .hens-post + .hens-post {
+    magin-top: 60px;
+  }
 }
 .hens-header {
   margin: 0;
-  padding: 30px;
+  padding: 15px;
 }
 @media (min-width: 767px) {
   .hens-header {
+    padding: 30px;
     width: 150px;
     position: fixed;
     top: 0;
@@ -78,7 +107,7 @@ body {
   }
 }
 .hens-header h1 {
-  margin: 0 0 30px;
+  margin: 0 0 15px;
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -92,6 +121,40 @@ body {
 }
 .hens-header h1 a:active {
   color: #363636;
+}
+@media (min-width: 767px) {
+  .hens-header h1 {
+    margin-bottom: 30px;
+  }
+}
+.hens-menu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+}
+@media (min-width: 767px) {
+  .hens-menu {
+    display: none;
+  }
+}
+.hens-navigation-menu {
+  display: none;
+  border-top: 1px dotted #808080;
+  border-bottom: 1px dotted #808080;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.hens-menu-expanded .hens-navigation-menu {
+  display: block;
+}
+@media (min-width: 767px) {
+  .hens-navigation-menu {
+    display: block;
+    border-top: none;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 }
 .hens-header-list {
   margin: 15px 0 0;
@@ -114,6 +177,7 @@ body {
 }
 .hens-post-meta {
   margin-top: 30px;
+  padding: 0 15px;
   color: #808080;
 }
 .hens-post-meta a {
@@ -127,4 +191,9 @@ body {
 }
 .hens-post-meta a:active {
   color: black;
+}
+@media (min-width: 767px) {
+  .hens-post-meta {
+    padding: 0;
+  }
 }
