@@ -90,7 +90,7 @@ body {
 }
 @media (min-width: 767px) {
   .hens-post + .hens-post {
-    magin-top: 60px;
+    margin-top: 60px;
   }
 }
 .hens-header {
