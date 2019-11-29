@@ -1,9 +1,13 @@
 {
-  "name": "Hensley",
-  "version": "0.0.0",
+  "name": "hensley",
+  "version": "0.0.1",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-less": "^1.1.0",
     "grunt-contrib-watch": "^0.6.1"
+  },
+  "author": {
+    "name": "Michael Hensley",
+    "email": "hensley.hensley@gmail.com"
   }
 }

@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    {{! Document Settings }}
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  {{! Document Settings }}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    {{! Page Meta }}
-    <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
+  {{! Page Meta }}
+  <title>{{meta_title}}</title>
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" href="{{asset "img/favicon-194x194.png" sizes="194x194"}}">
-    <link rel="icon" type="image/png" href="{{asset "img/favicon-192x192.png" sizes="192x192"}}">
-    <link rel="icon" type="image/png" href="{{asset "img/favicon-96x96.png" sizes="96x96"}}">
-    <link rel="icon" type="image/png" href="{{asset "img/favicon-32x32.png" sizes="32x32"}}">
-    <link rel="icon" type="image/png" href="{{asset "img/favicon-16x16.png" sizes="16x16"}}">
-    <link rel="shortcut icon" href="{{asset "img/favicon-16x16.png"}}">
+  <link rel="icon" type="image/png" href="{{asset "img/favicon-194x194.png" sizes="194x194"}}">
+  <link rel="icon" type="image/png" href="{{asset "img/favicon-192x192.png" sizes="192x192"}}">
+  <link rel="icon" type="image/png" href="{{asset "img/favicon-96x96.png" sizes="96x96"}}">
+  <link rel="icon" type="image/png" href="{{asset "img/favicon-32x32.png" sizes="32x32"}}">
+  <link rel="icon" type="image/png" href="{{asset "img/favicon-16x16.png" sizes="16x16"}}">
+  <link rel="shortcut icon" href="{{asset "img/favicon-16x16.png"}}">
 
-    {{! Styles'n'Scripts }}
-    <link rel="stylesheet" type="text/css" href="{{asset "components/normalize-css/normalize.css"}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset "css/hens.css"}}" />
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/66368/Hensley/style.css?3gdq8i">
+  {{! Styles'n'Scripts }}
+  <link rel="stylesheet" type="text/css" href="{{asset "components/normalize-css/normalize.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/hens.css"}}" />
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/66368/Hensley/style.css?3gdq8i">
 
-    {{! Ghost outputs important style and meta data with this tag }}
-    {{ghost_head}}
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
 </head>
+
 <body class="{{body_class}} hens-body">
 
-    {{navigation}}
+  {{navigation}}
 
-    <main class="hens-main" role="main">
+  <main class="hens-main" role="main">
 
-        {{! Everything else gets inserted here }}
-        {{{body}}}
+    {{! Everything else gets inserted here }}
+    {{{body}}}
 
-        <div class="hens-footer">
-          <span>&copy; Michael Hensley, {{date format="YYYY"}}</span>
-        </div>
-    </main>
-    <script src="{{asset "js/menu.js"}}"></script>
-    <script src="{{asset "js/hens-track.js"}}"></script>
+    <div class="hens-footer">
+      <span>&copy; Michael Hensley, {{date format="YYYY"}}</span>
+    </div>
+  </main>
+  <script src="{{asset "js/menu.js"}}"></script>
+  <script src="{{asset "js/hens-track.js"}}"></script>
 </body>
+
 </html>
